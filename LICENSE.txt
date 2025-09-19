@@ -1,0 +1,68 @@
+AkServer – Local Secure File Server
+Version: 1.0.0
+Author: Akshay Ashok Shinde
+Year: 2025
+SPDX-License-Identifier: Proprietary
+
+-------------------------------------------------------------
+OUR COMMITMENT TO OPEN SOURCE
+-------------------------------------------------------------
+AkServer is built using free and open-source tools. We respect the
+licenses of all third-party software and include their license files
+for transparency (see THIRD_PARTY_LICENSES.txt). While AkServer
+leverages open-source components, the AkServer codebase itself is
+proprietary and closed source.
+
+-------------------------------------------------------------
+LICENSE AGREEMENT FOR AKSERVER
+-------------------------------------------------------------
+Copyright (C) 2025 Akshay Ashok Shinde
+
+AkServer is proprietary software. It is licensed, not sold.
+All rights are reserved unless explicitly granted in writing.
+
+You are granted a limited, non-exclusive, non-transferable,
+revocable license to install and use AkServer for evaluation,
+trial, or internal personal/business purposes, as further
+defined in the End User License Agreement (EULA.txt).
+
+-------------------------------------------------------------
+PROHIBITED ACTIONS
+-------------------------------------------------------------
+Without explicit written permission, you may NOT:
+
+    - Copy, distribute, or publicly release the software
+    - Modify, reverse engineer, or create derivative works
+    - Sell, rent, lease, or sublicense the software
+    - Remove or alter any copyright, trademark, or notices
+
+-------------------------------------------------------------
+COMMERCIAL LICENSE AND PARTNERSHIP
+-------------------------------------------------------------
+Commercial or enterprise use of AkServer requires a separate
+commercial license. For licensing inquiries, redistribution
+rights, or partnerships, please contact:
+
+    Email: akserverstorage@gmail.com
+    Location: Hubballi, Karnataka, India
+
+-------------------------------------------------------------
+THIRD-PARTY COMPONENTS
+-------------------------------------------------------------
+AkServer may include third-party libraries distributed under
+open-source licenses (Apache-2.0, GPLv3, LGPLv3, MPL-2.0,
+PSF-2.0, etc.). These components remain governed by their
+respective licenses. See THIRD_PARTY_LICENSES.txt for details.
+
+-------------------------------------------------------------
+DISCLAIMER
+-------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED. THE LICENSOR SHALL NOT BE LIABLE FOR ANY
+CLAIMS OR DAMAGES ARISING FROM USE OR INABILITY TO USE THE
+SOFTWARE.
+
+-------------------------------------------------------------
+END OF LICENSE
+-------------------------------------------------------------
+© 2025 Akshay Ashok Shinde (AkServer). All rights reserved.
