@@ -159,7 +159,7 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.5rem;
 }
 
 .mobile-menu li a {
@@ -196,8 +196,8 @@ body {
 }
 
 .mobile-menu .navbar-social {
-  padding: 1rem;
-  justify-content: center;
+  padding: 0;
+  justify-content: left;
 }
 
 /* Animations */
@@ -1131,6 +1131,7 @@ nav ul {
   vertical-align: -0.15em; /* Adjusts vertical alignment */
   margin-right: 0.4em; /* Space between icon & text */
 }
+
 
 
 
