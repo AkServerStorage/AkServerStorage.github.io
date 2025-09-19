@@ -150,11 +150,8 @@
       </p>
       <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
         <a href="#contact" class="btn-primary">Get Your Custom Solution</a>
-<a id="download-btn"
-   href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe"
-   class="btn-primary secondary">
-   <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" />
-   Download for Windows
+<a id="download-btn" href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe" class="btn-primary secondary">
+    Download for Windows
 </a>
 
 
@@ -681,26 +678,27 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 <script>
 document.getElementById('download-btn').addEventListener('click', function(e) {
-  e.preventDefault(); // prevent default navigation
+    e.preventDefault(); // prevent default navigation
 
-  // Trigger download
-  const downloadLink = document.createElement('a');
-  downloadLink.href = this.href;
-  downloadLink.download = 'AkServer.exe';
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-  document.body.removeChild(downloadLink);
+    const downloadUrl = this.href;
 
-  // Delay opening install.html by 500ms
-  setTimeout(() => {
-    window.location.href = 'install.html';
-  }, 500); // 0.5 seconds delay
+    // Create invisible iframe to start the download
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = downloadUrl;
+    document.body.appendChild(iframe);
+
+    // Navigate to install.html after a short delay to ensure download starts
+    setTimeout(() => {
+        window.location.href = 'install.html';
+    }, 300); // 300ms is usually enough
 });
 </script>
 
 </body>
 
 </html>
+
 
 
 
