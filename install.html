@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AkServer: Build your private offline file sync system. Secure, customizable cloud storage with no internet required.">
+  <meta name="keywords" content="offline file sync, private cloud storage, secure file sharing, AkServer, local network sync, private AI">
+  <meta name="author" content="AkServer Team - Akshay Shinde">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://akserverstorage.github.io/akserver-website/">
+  <link rel="alternate" hreflang="en" href="https://akserverstorage.github.io/akserver-website/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="AkServer – Private Offline File Sync & Cloud Storage" />
+  <meta property="og:description" content="AkServer offers secure, offline file syncing and private cloud storage with a modern dashboard and no subscriptions." />
+  <meta property="og:url" content="https://akserverstorage.github.io/akserver-website/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://akserverstorage.github.io/akserver-website/images/akserver-og-image.png" />
+  <meta property="og:site_name" content="AkServer" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@akserverstorage" />
+  <meta name="twitter:creator" content="@akserverstorage" />
+  <meta name="twitter:title" content="AkServer – Private Offline File Sync & Cloud Storage" />
+  <meta name="twitter:description" content="Secure offline file sync with no cloud or subscriptions. Powered by AkServer." />
+  <meta name="twitter:image" content="https://akserverstorage.github.io/akserver-website/images/akserver-twitter-card.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AkServer",
+      "operatingSystem": "Windows",
+      "applicationCategory": "File Management",
+      "description": "AkServer is a private, offline file sync and cloud storage system that runs on your local network with no internet required.",
+      "url": "https://akserverstorage.github.io/akserver-website/",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "AkServer Team",
+        "url": "https://akserverstorage.github.io/akserver-website/"
+      }
+    }
+  </script>
+
+  <!-- Preload key resources -->
+  <link rel="preload" href="images/akserver-logo.png" as="image">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" as="style">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" as="script">
+
+  <!-- Inline critical CSS -->
+  <style>
+    :root {
+      --brand-blue: #2980b9;
+      --brand-deep: #189ab4;
+      --dark-blue: #2c3e50;
+      --text-dark: #1a1a1a;
+      --text-muted: #4a4a4a;
+      --bg-light: #ffffff;
+      --panel: #f5f5f5;
+      --shadow-light: rgba(0, 0, 0, 0.1);
+      --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-family);
+      color: var(--text-dark);
+      background-color: #f9f9f9;
+      margin: 0;
+      line-height: 1.5;
+    }
+  </style>
+
+  <title>AkServer | Private Offline File Sync & Self-hosted Storage</title>
+  <link rel="icon" href="images/akserver-logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css?v=1.0.0">
+  <link rel="stylesheet" href="install.css?v=1.0.0">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="logo">
+      <a href="./">
+        <img src="images/akserver-logo.png" alt="AkServer Logo" style="height: 32px;" loading="lazy">
+      </a>
+      <div class="bot-container">
+        <img src="images/akserver-ai-bot.png" alt="AkServer Private AI Bot" class="bot-image" loading="lazy">
+        <span class="cloud-text">Coming soon: AI Without the Cloud</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="install.html">Installation</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="navbar-social">
+        <a href="https://www.instagram.com/akserverstorage/" target="_blank" aria-label="Instagram AkServer" rel="noopener">
+          <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://x.com/akserverstorage" target="_blank" aria-label="Twitter AkServer" rel="noopener">
+          <img src="icons/x-logo.png" alt="Twitter" loading="lazy" />
+        </a>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="install.html">Installation</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="navbar-social mobile-social">
+        <a href="https://www.instagram.com/akserverstorage/" target="_blank" aria-label="Instagram AkServer" rel="noopener">
+          <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://x.com/akserverstorage" target="_blank" aria-label="Twitter AkServer" rel="noopener">
+          <img src="icons/x-logo.png" alt="Twitter" loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page" role="main" aria-labelledby="pageTitle">
+    <div class="page-head">
+      <div>
+        <h1 id="pageTitle" class="title">Installation — AkServer</h1>
+        <p class="sub">Detailed step-by-step instructions, screenshots, and troubleshooting.</p>
+      </div>
+      <div class="cta-wrap" role="region" aria-label="Download options">
+        <a class="btn-primary" href="https://github.com/AkServerStorage/akserver-website/releases/download/AkServer/AkServer.exe" download aria-describedby="downloadDesc" aria-label="Download AkServer installer version 1.0.0, size approximately 113 megabytes">
+          <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" /> Download Installer
+        </a>
+        <a class="btn-primary secondary" href="./" aria-label="Back to main site">← Back to Home</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Main Instructions -->
+      <section aria-label="Installation instructions and steps">
+        <!-- Table of Contents -->
+        <nav class="toc-top" aria-label="Table of Contents">
+          <ul>
+            <li><a href="#intro">Quick Overview</a></li>
+            <li><a href="#prereqs">Prerequisites</a></li>
+            <li><a href="#steps">Installation Steps</a></li>
+            <li><a href="#setup">Setup AkServer</a></li>
+            <li><a href="#webapp">Setup Web App</a></li>
+            <li><a href="#faq">Troubleshooting</a></li>
+          </ul>
+        </nav>
+
+        <!-- Intro -->
+        <section class="panel" id="intro" data-aos="fade-up" tabindex="0">
+          <h3>Quick Overview</h3>
+          <p class="lead">This page provides a practical, step-by-step installation guide for AkServer on Windows. Follow each step carefully. Troubleshooting tips are at the bottom of this page.</p>
+        </section>
+
+        <!-- Prerequisites -->
+        <section class="panel" id="prereqs" data-aos="fade-up" data-aos-delay="80" style="margin-top: 18px;">
+          <h3>Prerequisites</h3>
+          <ul>
+            <li>Windows 10 / 11 (x64) or compatible PC</li>
+            <li>Administrator privileges to install software</li>
+            <li>Local network connectivity (Wi-Fi or hotspot) for device syncing</li>
+            <li>At least 500 MB free disk space (depends on use)</li>
+            <li>Recommended: Temporarily disable VPN or firewall during installation if you encounter connectivity issues, then re-enable for security.</li>
+          </ul>
+        </section>
+
+        <!-- Installation Steps -->
+        <section class="panel" id="steps" data-aos="fade-up" data-aos-delay="140" style="margin-top: 18px;">
+          <h3>Installation Steps</h3>
+        <div class="step" data-aos="fade-up" data-aos-delay="180">
+          <div class="num">1</div>
+          <div class="content">
+            <h4>Download the Installer</h4>
+            <p>
+              Click the <a href="https://github.com/AkServerStorage/akserver-website/releases/download/AkServer/AkServer.exe" class="btn-primary secondary" download>
+                Download Installer
+              </a> button at the top of this page (or use the direct link) and save the EXE to a folder you can access.
+            </p>
+          </div>
+        </div>
+
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <div class="num">2</div>
+            <div class="content">
+              <h4>Run & Approve</h4>
+              <p>Right-click → Run as administrator. If Windows SmartScreen appears, choose <em>More info → Run anyway</em>. Accept prompts and allow firewall access when asked.</p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="220">
+            <div class="num">3</div>
+            <div class="content">
+              <h4>Initial Setup</h4>
+              <p>Choose a folder to use as the sync/store location, enable auto-start if desired, and click Finish. Open AkServer and follow on-screen instructions to connect devices.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- AkServer Setup Steps -->
+        <section class="setup-section" id="setup" aria-label="AkServer setup steps" data-aos="fade-up" data-aos-delay="160">
+          <h2 class="section-title">How to Set Up AkServer</h2>
+          <details class="setup-step" open data-aos="fade-up" data-aos-delay="180">
+            <summary>
+              <div class="num">1</div>
+              <div class="content">
+                <h4>Bypass SmartScreen</h4>
+              </div>
+            </summary>
+          <div class="step-image">
+            <img src="images/pre_defender_warning.png" 
+                 alt="Windows Defender SmartScreen warning 1" 
+                 loading="lazy">
+          
+            <img src="images/defender_warning.png" 
+                 alt="Windows Defender SmartScreen warning 2" 
+                 loading="lazy">
+          </div>
+
+
+            <div class="step-text">
+              <p id="desc1">Click "More Info" → "Run Anyway" to start setup.</p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="200">
+            <summary>
+              <div class="num">2</div>
+              <div class="content">
+                <h4>Allow Installer</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/uac_prompt.png" type="image/png">
+                <img src="images/uac_prompt.png" alt="User Account Control prompt" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="desc2">Windows may ask for permission. Click “Yes”.</p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="220">
+            <summary>
+              <div class="num">3</div>
+              <div class="content">
+                <h4>Enable Auto Start</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/startup_option.png" type="image/png">
+                <img src="images/startup_option.png" alt="AkServer startup option" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="desc3">Let AkServer run on boot — ideal for backup PCs.</p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="240">
+            <summary>
+              <div class="num">4</div>
+              <div class="content">
+                <h4>Allow in Firewall</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/firewall_allow.png" type="image/png">
+                <img src="images/firewall_allow.png" alt="Windows Firewall prompt" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="desc4">Give permission when asked — this enables local access.</p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="260">
+            <summary>
+              <div class="num">5</div>
+              <div class="content">
+                <h4>First Setup</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/akserver_main_window.png" type="image/png">
+                <img src="images/akserver_main_window.png" alt="AkServer main window" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="desc5">After firewall approval, AkServer window opens — ready for action.</p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="280">
+            <summary>
+              <div class="num">6</div>
+              <div class="content">
+                <h4>Add Device & Set Upload Path</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/connect_click.png" type="image/png">
+                <img src="images/connect_click.png" alt="AkServer connect button" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="desc6">Register your device and choose where uploaded files should be stored.</p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="300">
+            <summary>
+              <div class="num">7</div>
+              <div class="content">
+                <h4>Generate OTP</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/otp_generate.png" type="image/png">
+                <img src="images/otp_generate.png" alt="AkServer OTP generation" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="desc7">Click “Generate Code” to get a one-time code for secure device registration.</p>
+            </div>
+          </details>
+
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="340">
+            <summary>
+              <div class="num">9</div>
+              <div class="content">
+                <h4>Connected Devices</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/linked_devices.png" type="image/png">
+                <img src="images/linked_devices.png" alt="AkServer linked devices" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="desc9">Register and link multiple devices — all visible in one place.</p>
+            </div>
+          </details>
+        </section>
+
+        <!-- Web App Setup Steps -->
+        <section class="setup-section" id="webapp" aria-label="Web App setup steps" data-aos="fade-up" data-aos-delay="180">
+          <h2 class="section-title">How to Set Up Web App</h2>
+          
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="220">
+            <summary>
+              <div class="num">1</div>
+              <div class="content">
+                <h4>Browser Security Warning</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/login_from_browser.png" type="image/png">
+                <img src="images/login_from_browser.png" alt="Browser shows 'Your connection is not private' warning" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="webAppDesc1">
+                Your browser may display <strong>"Your connection is not private"</strong> or a similar warning. This happens because AkServer serves a local certificate that can't be validated by public certificate authorities (the service runs entirely on your private network and does not use the public internet). This is expected for local-only servers.
+              </p>
+              <p><strong>How to proceed:</strong> click <em>Advanced</em> → then choose <em>Proceed to &lt;your-AkServer-URL&gt; (unsafe)</em>. This is safe when you are on your local, trusted network and confirmed the link is from your AkServer host.</p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="240">
+            <summary>
+              <div class="num">2</div>
+              <div class="content">
+                <h4>Login with OTP</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/otp_login.png" type="image/png">
+                <img src="images/otp_login.png" alt="AkServer login page showing OTP field" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="webAppDesc2">
+                After proceeding past the browser warning you'll reach the AkServer login page. Enter the <strong>One-Time Password (OTP)</strong> shown on the AkServer host (or generated by the host) and click <strong>Login</strong>. The OTP rotates for security — use the current code.
+              </p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="260">
+            <summary>
+              <div class="num">3</div>
+              <div class="content">
+                <h4>Upload Files</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/web_app.png" type="image/png">
+                <img src="images/web_app.png" alt="Web App Files tab and upload controls" loading="lazy">
+              </picture>
+              <picture>
+                <source srcset="images/sync_folder.png type="image/png">
+                <img src="images/sync_folder.png" alt="Web App Files tab and upload controls" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="webAppDesc3">
+                Open the <strong>Files</strong> tab. Use <strong>Upload</strong> or <strong>Select Folder</strong> to choose files from your device. The Web App shows upload progress; files are stored on the AkServer host and become immediately available to other connected devices on the same network.
+              </p>
+            </div>
+          </details>
+          <details class="setup-step" data-aos="fade-up" data-aos-delay="280">
+            <summary>
+              <div class="num">4</div>
+              <div class="content">
+                <h4>View and Manage Files</h4>
+              </div>
+            </summary>
+            <div class="step-image">
+              <picture>
+                <source srcset="images/view_manage.png" type="image/png">
+                <img src="images/view_manage.png" alt="Grid and list views in Web App" loading="lazy">
+              </picture>
+            </div>
+            <div class="step-text">
+              <p id="webAppDesc4">
+                Switch between Grid, List, or Details view to browse files. Click any file to preview or download it. Use the search bar to locate files quickly. Long-press (mobile) or right-click (desktop) for more file actions (rename, delete, share link if enabled).
+              </p>
+            </div>
+          </details>
+
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="panel" id="faq" tabindex="0" aria-label="Frequently Asked Questions" data-aos="fade-up" data-aos-delay="200" style="margin-top: 30px;">
+          <h3>Troubleshooting & FAQ</h3>
+          <details class="faq-item" open>
+            <summary>Installer blocked by SmartScreen — what to do?</summary>
+            <p>If Windows shows SmartScreen, click <strong>More info</strong> and then <strong>Run anyway</strong>. SmartScreen flags are common for new or locally distributed apps.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Firewall prevents local access</summary>
+            <p>When prompted, allow AkServer through your firewall. If needed, add a rule for the AkServer executable in <em>Windows Defender Firewall &gt; Allow an app or feature</em> and enable private network access.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Devices cannot find the server</summary>
+            <p>Ensure all devices are on the same Wi-Fi or hotspot. Disable VPNs or network filters temporarily. Check that AkServer shows "listening" in the main window.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What if AkServer doesn’t appear in the Start Menu?</summary>
+            <p>Search for "AkServer" in the Windows search bar. If not found, navigate to <em>C:\Program Files\AkServer</em> and run <code>AkServer.exe</code> manually. Reinstall if the issue persists.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How to uninstall AkServer?</summary>
+            <p>Go to <em>Control Panel &gt; Programs &gt; Uninstall a program</em> and select AkServer. Follow the uninstallation wizard.</p>
+          </details>
+        </section>
+
+        <!-- Feedback Form -->
+        <section class="feedback-panel" role="region" aria-label="Feedback form">
+          <h3>Help Us Improve</h3>
+          <form id="feedbackForm" action="https://formspree.io/f/your-form-id" method="POST" aria-live="polite">
+            <label for="feedback-text">Was this guide helpful? Any suggestions?</label>
+            <textarea id="feedback-text" name="feedback" placeholder="Write your feedback here..." aria-required="true"></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <button type="submit" aria-label="Submit feedback">Submit Feedback</button>
+            <p id="feedback-status" role="alert" aria-live="assertive" style="display: none;">Thank you for your feedback!</p>
+          </form>
+        </section>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="side" aria-label="Sidebar">
+        <section class="download-box" aria-label="Download section">
+          <h4>Download AkServer Installer</h4>
+          <a class="btn-primary" href="https://github.com/AkServerStorage/akserver-website/releases/download/AkServer/AkServer.exe" download aria-describedby="downloadDescSide" aria-label="Download AkServer installer version 1.0.0, size approximately 113 megabytes">
+            <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" /> Download Installer (126 MB)
+          </a>
+          <p id="downloadDescSide" class="small">
+            Version: 1.0.0<br>
+            Release date: 2025-08-01
+          </p>
+          <p class="small" style="margin-top: 12px;">
+            Note: Digital signing of our installer is planned for upcoming releases.
+          </p>
+        </section>
+        <section class="panel" style="margin-top: 14px;">
+          <h4>Need Help?</h4>
+          <p class="small">Contact us at <a href="mailto:support@akserver.example">akserverstorage@gmail.com</a> or use the <a href="./#contact">Contact form</a> on the main site.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <nav aria-label="Social media links" style="display: inline-flex; gap: 12px; margin-bottom: 0.6rem; justify-content: center;">
+        <a href="https://www.instagram.com/akserverstorage/" target="_blank" rel="noopener" aria-label="Instagram AkServer">
+          <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" width="24" height="24" loading="lazy" />
+        </a>
+        <a href="https://x.com/akserverstorage" target="_blank" rel="noopener" aria-label="Twitter AkServer">
+          <img src="icons/x-logo.png" alt="Twitter" width="24" height="24" loading="lazy" />
+        </a>
+      </nav>
+      <p style="margin: 0; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; color: #000;">
+        &copy; 2025 AkServer. All rights reserved.
+        &nbsp;|&nbsp;
+        <a href="privacy.html" style="color: var(--brand-blue); text-decoration: none; font-weight: 500;" aria-label="View Licenses, Privacy Policy, and EULA">
+          Licenses & Privacy Policy <span style="color: #000;">|</span>
+        </a>
+
+        <span style="font-style: italic; color: #555;">Designed by AkshAy Shinde.</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800
+    });
+    // Smooth scroll with navbar offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 48,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    // Ensure page loads at top if no hash
+    window.addEventListener('load', () => {
+      if (!location.hash) {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".mobile-menu");
+      if (!hamburger || !menu) return;
+      const closeMenu = () => {
+        menu.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+      };
+      // Toggle menu on hamburger click
+      hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = menu.classList.toggle("active");
+        hamburger.setAttribute("aria-expanded", isOpen);
+      });
+      // Close menu when clicking/tapping outside
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !hamburger.contains(e.target)) closeMenu();
+      });
+      document.addEventListener("touchstart", (e) => {
+        if (!menu.contains(e.target) && !hamburger.contains(e.target)) closeMenu();
+      });
+      // Close menu on mobile menu link click
+      menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+    });
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("download") === "true") {
+      // Create an invisible link and trigger it
+      const link = document.createElement("a");
+      link.href = "https://github.com/AkServerStorage/akserver-website/releases/download/AkServer/AkServer.exe";
+      link.download = "AkServer.exe";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  });
+</script>
+
+</body>
+
+</html>

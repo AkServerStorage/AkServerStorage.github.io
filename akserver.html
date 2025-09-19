@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AkServer Test</title>
+  
+  <style>
+/* =================================
+   Base Reset & Global Styles
+================================= */
+<link rel="stylesheet" href="global.css">
+
+/*================================= 
+   Footer
+================================= */
+.footer {
+  background-color: var(--bg-light);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  border-top: 1px solid #ddd;
+  font-family: var(--font-family);
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-link {
+  color: var(--brand-blue);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #1a6edd;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Social Media Icons in Footer */
+.footer-container nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 0.6rem;
+}
+
+.footer-container nav a img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s ease;
+}
+
+.footer-container nav a:hover img,
+.footer-container nav a:focus img {
+  filter: brightness(1.2);
+}
+@media (max-width: 700px) {
+  .feature-row {
+    flex-direction: column;
+  }
+
+  .feature-icon {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .main-title {
+    font-size: 1.7rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+    
+<head>
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-container">
+    <nav aria-label="Social media links" style="display: inline-flex; gap: 12px; margin-bottom: 0.6rem; justify-content: center;">
+      <a href="https://www.instagram.com/akserverstorage/" target="_blank" rel="noopener" aria-label="Instagram AkServer">
+        <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" width="24" height="24" loading="lazy" />
+      </a>
+      <a href="https://x.com/akserverstorage" target="_blank" rel="noopener" aria-label="Twitter AkServer">
+        <img src="icons/x-logo.png" alt="Twitter" width="24" height="24" loading="lazy" />
+      </a>
+    </nav>
+    <p style="margin: 0; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; color: #000;">
+      &copy; 2025 AkServer. All rights reserved.
+      &nbsp;|&nbsp;
+      <a href="privacy.html" style="color: var(--brand-blue); text-decoration: none; font-weight: 500;" aria-label="View Licenses, Privacy Policy, and EULA">
+        Licenses & Privacy Policy <span style="color: #000;">|</span>
+      </a>
+      
+      <span style="font-style: italic; color: #555;">Designed by AkshAy S.</span>
+    </p>
+  </div>
+</footer>
+
+</body>
+
+</html>
