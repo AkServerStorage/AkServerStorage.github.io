@@ -1,0 +1,116 @@
+END USER LICENSE AGREEMENT (EULA) FOR AKSERVER
+Version: 1.0.0
+Effective Date: July 29, 2025
+Last Updated: September 18, 2025
+
+IMPORTANT — PLEASE READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THIS SOFTWARE.
+
+This End User License Agreement ("Agreement") is a legal agreement between you (either an individual or a single entity) and Akshay Ashok Shinde ("Licensor") for the software product AkServer ("Software").
+
+By installing, copying, or using the Software, you agree to be bound by this Agreement. If you do not agree, do not install or use the Software.
+
+-------------------------------------------------------------
+1. GRANT OF LICENSE
+-------------------------------------------------------------
+The Licensor grants you a non-exclusive, non-transferable, revocable license to:
+
+    - Install and use one copy of the Software on a single computer system owned or controlled by you.
+    - Use the Software for personal, evaluation, or internal business purposes only.
+
+-------------------------------------------------------------
+2. TRIAL, FREE, OR FREEMIUM USAGE
+-------------------------------------------------------------
+The Software may be provided as a free, trial, or freemium version with limited features or time-based access. Continued use beyond the trial period or access to premium features requires purchase of a valid commercial license.
+
+    - The Software may collect anonymized usage metrics as described in PRIVACY.txt.
+
+-------------------------------------------------------------
+3. COMMERCIAL LICENSING
+-------------------------------------------------------------
+For commercial or enterprise usage, a separate commercial license agreement is required. Please contact the Licensor for details.
+
+-------------------------------------------------------------
+4. INTELLECTUAL PROPERTY
+-------------------------------------------------------------
+All rights, title, and interest in and to the Software, including but not limited to source code, design, layout, branding, and documentation, remain with the Licensor.
+
+    - All logos, names, and branding associated with AkServer are trademarks of the Licensor.
+    - No rights are granted beyond those explicitly stated in this Agreement.
+
+-------------------------------------------------------------
+5. RESTRICTIONS
+-------------------------------------------------------------
+You agree not to:
+
+    - Reverse engineer, decompile, or disassemble the Software.
+    - Modify or create derivative works of the Software.
+    - Sell, rent, lease, sublicense, distribute, or otherwise transfer the Software.
+    - Remove, obscure, or alter any copyright, trademark, or proprietary notices.
+
+-------------------------------------------------------------
+6. PRIVACY POLICY
+-------------------------------------------------------------
+Your use of the Software is governed by the AkServer Privacy Policy (PRIVACY.txt). By using the Software, you consent to the collection and use of information as described in the Privacy Policy.
+
+-------------------------------------------------------------
+7. THIRD-PARTY LICENSES
+-------------------------------------------------------------
+The Software may include or distribute third-party components subject to their own licenses. A complete list of these components and licenses is provided in THIRD_PARTY_LICENSES.txt. By using the Software, you accept these third-party license terms.
+
+-------------------------------------------------------------
+8. UPDATES AND MAINTENANCE
+-------------------------------------------------------------
+The Software may periodically check for updates and may download and install them automatically. By using the Software, you consent to receiving such updates.
+
+The Licensor is not obligated to provide maintenance, support, or updates unless separately agreed in writing.
+
+-------------------------------------------------------------
+9. TERMINATION
+-------------------------------------------------------------
+This Agreement is effective until terminated. It terminates automatically without notice if you fail to comply with any term. Upon termination, you must destroy all copies of the Software.
+
+-------------------------------------------------------------
+10. WARRANTY DISCLAIMER
+-------------------------------------------------------------
+The Software is provided "AS IS", without warranty of any kind. The Licensor disclaims all express or implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
+
+-------------------------------------------------------------
+11. LIMITATION OF LIABILITY
+-------------------------------------------------------------
+The Licensor is not liable for any damages arising from use or inability to use the Software, including but not limited to lost profits, business interruption, or lost data, even if advised of the possibility of such damages.
+
+-------------------------------------------------------------
+12. EXPORT AND RESTRICTED USE
+-------------------------------------------------------------
+You agree not to use, export, or re-export the Software in violation of applicable export control laws. You also agree not to use the Software for purposes that are unlawful, harmful, or violate the rights of others, including but not limited to unauthorized surveillance or military applications.
+
+-------------------------------------------------------------
+13. GOVERNING LAW
+-------------------------------------------------------------
+This Agreement shall be governed by the laws of India. All disputes shall be subject to the exclusive jurisdiction of courts in Hubballi, Karnataka, India.
+
+-------------------------------------------------------------
+14. UPDATES TO THIS AGREEMENT
+-------------------------------------------------------------
+This Agreement may be updated from time to time. Continued use of the Software constitutes acceptance of the updated terms.
+
+-------------------------------------------------------------
+15. ENTIRE AGREEMENT
+-------------------------------------------------------------
+This Agreement constitutes the entire agreement between you and the Licensor and supersedes all prior agreements or understandings, written or oral.
+
+-------------------------------------------------------------
+16. CONTACT INFORMATION
+-------------------------------------------------------------
+Licensor:
+
+    - Name: Akshay Ashok Shinde
+    - Email: akserverstorage@gmail.com
+    - Address: Hubballi, Karnataka, India
+
+-------------------------------------------------------------
+SUMMARY
+-------------------------------------------------------------
+This Agreement grants a limited, non-transferable license to use AkServer. By using the Software, you agree to the Privacy Policy, restrictions, and disclaimers. All rights remain with the Licensor.
+
+© 2025 Akshay Ashok Shinde (AkServer). All rights reserved.

@@ -1,0 +1,192 @@
+AkServer – Privacy Policy
+Version: 2.1
+Effective Date: July 29, 2025
+Last Updated: September 4, 2025
+
+This Privacy Policy describes how AkServer ("we", "us", or "our") collects, uses, and safeguards information in connection with your use of the AkServer desktop software and related services ("Application").
+
+AkServer is a local file-serving software with no default connectivity to external servers. We are committed to protecting your privacy and collecting only minimal, anonymous usage data to improve the software and monitor its adoption.
+
+-------------------------------------------------------------
+1. INFORMATION WE COLLECT
+-------------------------------------------------------------
+
+a. Local Usage and Diagnostic Data
+
+    What is collected:
+
+        - Timestamps of software usage
+        - Anonymized device ID (cannot identify you personally)
+        - First seen date (installation date)
+        - Last seen date (most recent usage)
+        - Active days (number of days the software has been used)
+        - Install age (time since first installation)
+        - Trial/license status
+        - Platform (Windows, Linux, macOS, etc.)
+        - Architecture (x86, x64, ARM, etc.)
+        - Operating system version
+        - Language (system locale)
+        - Screen resolution
+        - Software version
+        - Timezone and UTC offset
+        - Number of connected/trusted devices
+
+    Why it's collected:
+
+        - To understand software adoption and growth
+        - To monitor device connections, display configurations, and usage patterns
+        - To improve functionality and support user experience
+
+    Storage and Sharing:
+
+        - All data is stored locally on your device
+        - Only anonymous, aggregated metrics may be sent externally
+        - No personal files, content, or identifiable information are collected or shared
+
+    Sent externally?
+
+        - Only anonymized usage metrics; no personal files or logs
+
+b. Device Authentication Data
+
+    What is collected:
+
+        - Locally generated device tokens
+        - OTP (one-time password) session information
+        - Registered device names
+
+    Purpose:
+
+        - To authenticate access to your AkServer instance from trusted devices only
+
+    Storage and Sharing:
+
+        - Stored locally using secure methods (encryption or hashed storage)
+        - Never sent externally
+
+c. File and Media Content
+
+    What is collected:
+
+        - None. AkServer does not copy, scan, or upload any files you serve
+
+    How it’s used:
+
+        - Files are streamed or accessed only within your local network
+
+    Sent externally?
+
+        - No
+
+d. Licensing and Payment Information
+
+    What is collected:
+
+        - None as of this policy’s date
+
+    If paid licensing is introduced:
+
+        - The policy will be updated, and users will be notified
+        - No financial data will be stored by AkServer directly
+        - All payments will be processed by trusted, secure third-party providers
+
+-------------------------------------------------------------
+2. HOW WE USE INFORMATION
+-------------------------------------------------------------
+
+All information is used locally or anonymously to:
+
+    - Enable secure local file serving
+    - Manage your trial/license status and unlock features
+    - Track software adoption, device connections, and screen configurations
+    - Support user troubleshooting
+    - Improve performance through anonymized data
+
+We do not use your data for:
+
+    - Advertising
+    - User profiling
+    - Behavioral tracking
+    - Cloud storage or analytics
+
+-------------------------------------------------------------
+3. DATA STORAGE AND SECURITY
+-------------------------------------------------------------
+
+    - All data is stored locally on your device
+    - Sensitive information is encrypted or hashed locally
+    - Clear-text logging is disabled
+    - No internet-based storage or cloud backups are included unless explicitly enabled
+
+-------------------------------------------------------------
+4. DATA SHARING AND DISCLOSURE
+-------------------------------------------------------------
+
+AkServer does not share, transmit, or disclose any user data to:
+
+    - AkServer developers or staff
+    - Third-party analytics companies
+    - Cloud platforms
+
+We may only disclose information if legally required, such as:
+
+    - Valid court order, subpoena, or government regulation
+    - To enforce licensing violations or security incidents
+
+-------------------------------------------------------------
+5. YOUR RIGHTS AND CHOICES
+-------------------------------------------------------------
+
+You have full control over your data:
+
+    - Access or delete local data manually from your system
+    - Remove all stored data by uninstalling AkServer
+    - Revoke or reset trusted devices via the local settings UI
+
+Note: As data is stored locally, there is no cloud “account” to delete or recover.
+
+-------------------------------------------------------------
+6. CHANGES TO THIS POLICY
+-------------------------------------------------------------
+
+We may revise this policy to reflect:
+
+    - New functionality
+    - Changes in applicable law
+    - Future licensing models
+
+All changes will be:
+
+    - Posted on our official website: https://akserverstorage.github.io/akserver-website
+    - Displayed in the app interface if relevant
+    - Timestamped at the top of this document
+
+You are encouraged to check for updates periodically.
+
+-------------------------------------------------------------
+7. LEGAL JURISDICTION
+-------------------------------------------------------------
+
+This Privacy Policy shall be governed by the laws of India.
+All disputes shall be subject to the exclusive jurisdiction
+of courts in Hubballi, Karnataka, India.
+
+-------------------------------------------------------------
+8. CONTACT INFORMATION
+-------------------------------------------------------------
+
+For privacy questions, feedback, or licensing help, contact:
+
+    - Email: akserverstorage@gmail.com
+    - Website: https://akserverstorage.github.io/akserver-website
+
+-------------------------------------------------------------
+SUMMARY
+-------------------------------------------------------------
+
+AkServer collects only anonymous usage metrics and device
+information to monitor adoption and improve the software.
+No personal files or content are ever uploaded or shared.
+
+Copyright © 2025–present Akshay Ashok Shinde (AkServer).
+All rights reserved.
