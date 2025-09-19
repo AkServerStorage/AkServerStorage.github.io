@@ -150,8 +150,7 @@
       </p>
       <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
         <a href="#contact" class="btn-primary">Get Your Custom Solution</a>
-      <a href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe"
-         class="btn-primary secondary" target="_blank" rel="noopener">
+      <a href="install.html" id="download-btn" class="btn-primary secondary">
         <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" />
         Download for Windows
       </a>
@@ -679,9 +678,9 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 <script>
 document.getElementById('download-btn').addEventListener('click', function(e) {
-  e.preventDefault(); // Stop the default link for a moment
+  e.preventDefault(); // prevent default navigation
 
-  // Start the download
+  // Trigger download
   const downloadLink = document.createElement('a');
   downloadLink.href = "https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe";
   downloadLink.download = 'AkServer.exe';
@@ -689,14 +688,17 @@ document.getElementById('download-btn').addEventListener('click', function(e) {
   downloadLink.click();
   document.body.removeChild(downloadLink);
 
-  // Then navigate to install.html
-  window.location.href = this.href;
+  // Redirect to install.html after short delay
+  setTimeout(() => {
+    window.location.href = "install.html";
+  }, 500); // 500ms delay to allow download to start
 });
 </script>
 
 </body>
 
 </html>
+
 
 
 
