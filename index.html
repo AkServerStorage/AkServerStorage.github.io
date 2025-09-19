@@ -150,11 +150,10 @@
       </p>
       <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
         <a href="#contact" class="btn-primary">Get Your Custom Solution</a>
-        <a href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe"
-           class="btn-primary secondary" target="_blank" rel="noopener">
-          <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" />
-          Download for Windows
-        </a>
+      <a href="install.html" id="download-btn" class="btn-primary secondary">
+        <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" />
+        Download for Windows
+      </a>
 
 
       </div>
@@ -677,17 +676,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   </script>
 <script>
-  // Check if URL has ?download=true
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get("download") === "true") {
-    // Start the download automatically
-    window.location.href = "https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe";
-  }
+document.getElementById('download-btn').addEventListener('click', function(e) {
+  e.preventDefault(); // Stop the default link for a moment
+
+  // Start the download
+  const downloadLink = document.createElement('a');
+  downloadLink.href = "https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe";
+  downloadLink.download = 'AkServer.exe';
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+
+  // Then navigate to install.html
+  window.location.href = this.href;
+});
 </script>
 
 </body>
 
 </html>
+
 
 
 
