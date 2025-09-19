@@ -145,11 +145,10 @@ body {
   display: none;
   background-color: var(--bg-light);
   position: fixed;
-  top: 48px;
+  top: 48px; /* Below navbar */
   left: 0;
   width: 100%;
-  height: 0;
-  overflow: hidden;
+  max-height: 100vh;
   transition: height 0.3s ease;
   box-shadow: 0 2px 5px var(--shadow-light);
   z-index: 999;
@@ -157,7 +156,7 @@ body {
 
 .mobile-menu.active {
   display: block;
-  height: 260px;
+  max-height: 100vh;
 }
 
 .mobile-menu ul {
@@ -172,7 +171,7 @@ body {
   font-size: 1rem;
   color: var(--dark-blue);
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.rem;
   display: block;
 }
 
@@ -202,8 +201,8 @@ body {
 }
 
 .mobile-menu .navbar-social {
-  padding: 1rem;
-  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  justify-content: left;
 }
 
 /* Animations */
