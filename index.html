@@ -677,7 +677,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 <script>
 document.getElementById('download-btn').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent default navigation
+  e.preventDefault();
 
   // Start the download
   const downloadLink = document.createElement('a');
@@ -687,14 +687,26 @@ document.getElementById('download-btn').addEventListener('click', function(e) {
   downloadLink.click();
   document.body.removeChild(downloadLink);
 
-  // Open install.html in a new tab
-  window.open('install.html', '_blank');
+  // Detect mobile
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Delay navigation on mobile
+    setTimeout(() => {
+      window.location.href = 'install.html';
+    }, 700); // 700ms works reliably on most phones
+  } else {
+    // Immediate navigation on desktop
+    window.location.href = 'install.html';
+  }
 });
+
 </script>
 
 </body>
 
 </html>
+
 
 
 
