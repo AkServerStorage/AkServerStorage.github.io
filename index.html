@@ -150,10 +150,11 @@
       </p>
       <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
         <a href="#contact" class="btn-primary">Get Your Custom Solution</a>
-<a id="download-btn" href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe"
+<a id="download-btn"
+   href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe"
    class="btn-primary secondary">
-  <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" />
-  Download for Windows
+   <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" />
+   Download for Windows
 </a>
 
 
@@ -679,33 +680,26 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 <script>
 document.getElementById('download-btn').addEventListener('click', function(e) {
-  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  e.preventDefault(); // prevent default link navigation
 
-  if (!isMobile) {
-    // Desktop: trigger download programmatically
-    e.preventDefault();
-    const downloadLink = document.createElement('a');
-    downloadLink.href = this.href;
-    downloadLink.download = 'AkServer.exe';
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+  // Trigger download programmatically
+  const downloadLink = document.createElement('a');
+  downloadLink.href = this.href;
+  downloadLink.download = 'AkServer.exe';
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
 
-    // Navigate to install.html
-    window.location.href = 'install.html';
-  } else {
-    // Mobile: let browser handle download naturally
-    // Then navigate to install.html after delay
-    setTimeout(() => {
-      window.location.href = 'install.html';
-    }, 1500); // 1.5 sec delay to allow download start
-  }
+  // Open installation page after download starts
+  window.location.href = 'install.html';
 });
 </script>
+
 
 </body>
 
 </html>
+
 
 
 
