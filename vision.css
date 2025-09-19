@@ -142,21 +142,21 @@ body {
 
 /* Mobile Menu */
 .mobile-menu {
-  display: none;
-  background-color: var(--bg-light);
+  display: block;
   position: fixed;
-  top: 48px; /* Below navbar */
+  top: 48px;
   left: 0;
   width: 100%;
-  max-height: 100vh;
-  transition: height 0.3s ease;
+  background-color: var(--bg-light);
+  overflow: hidden;
+  height: 0;                         /* collapsed */
+  transition: height 0.3s ease;      /* animate open/close */
   box-shadow: 0 2px 5px var(--shadow-light);
-  z-index: 999;
+  z-index: 1001;
 }
 
 .mobile-menu.active {
-  display: block;
-  max-height: 100vh;
+  /* no fixed height here — JS will set it */
 }
 
 .mobile-menu ul {
