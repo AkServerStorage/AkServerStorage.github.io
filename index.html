@@ -150,10 +150,12 @@
       </p>
       <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
         <a href="#contact" class="btn-primary">Get Your Custom Solution</a>
-<a id="download-btn" href="install.html" class="btn-primary secondary">
+<a id="download-btn" href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe"
+   class="btn-primary secondary">
   <img src="icons/download-file-icon.svg" alt="Download" class="download-icon" />
   Download for Windows
 </a>
+
 
 
       </div>
@@ -677,27 +679,26 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 <script>
 document.getElementById('download-btn').addEventListener('click', function(e) {
-  e.preventDefault(); // stop default link for a moment
-
-  // Start the download
-  const downloadLink = document.createElement('a');
-  downloadLink.href = "https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe";
-  downloadLink.download = 'AkServer.exe';
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-  document.body.removeChild(downloadLink);
-
-  // Detect mobile
   const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
-  if (isMobile) {
-    // Delay navigation on mobile
+  if (!isMobile) {
+    // Desktop: trigger download programmatically
+    e.preventDefault();
+    const downloadLink = document.createElement('a');
+    downloadLink.href = this.href;
+    downloadLink.download = 'AkServer.exe';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+
+    // Navigate to install.html
+    window.location.href = 'install.html';
+  } else {
+    // Mobile: let browser handle download naturally
+    // Then navigate to install.html after delay
     setTimeout(() => {
       window.location.href = 'install.html';
-    }, 700);
-  } else {
-    // Immediate navigation on desktop
-    window.location.href = 'install.html';
+    }, 1500); // 1.5 sec delay to allow download start
   }
 });
 </script>
@@ -705,6 +706,7 @@ document.getElementById('download-btn').addEventListener('click', function(e) {
 </body>
 
 </html>
+
 
 
 
