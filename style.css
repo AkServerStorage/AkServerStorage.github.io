@@ -142,8 +142,7 @@ body {
   top: 48px; /* Below navbar */
   left: 0;
   width: 100%;
-  height: 0;
-  overflow: hidden;
+  max-height: 100vh;
   transition: height 0.3s ease;
   box-shadow: 0 2px 5px var(--shadow-light);
   z-index: 999;
@@ -159,7 +158,7 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .mobile-menu li a {
@@ -196,10 +195,9 @@ body {
 }
 
 .mobile-menu .navbar-social {
-  padding: 0;
+  padding: 0.5rem 1.5rem;
   justify-content: left;
 }
-
 /* Animations */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -1131,6 +1129,7 @@ nav ul {
   vertical-align: -0.15em; /* Adjusts vertical alignment */
   margin-right: 0.4em; /* Space between icon & text */
 }
+
 
 
 
