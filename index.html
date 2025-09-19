@@ -681,9 +681,9 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 <script>
 document.getElementById('download-btn').addEventListener('click', function(e) {
-  e.preventDefault(); // prevent default link navigation
+  e.preventDefault(); // prevent default navigation
 
-  // Trigger download programmatically
+  // Trigger download
   const downloadLink = document.createElement('a');
   downloadLink.href = this.href;
   downloadLink.download = 'AkServer.exe';
@@ -691,16 +691,17 @@ document.getElementById('download-btn').addEventListener('click', function(e) {
   downloadLink.click();
   document.body.removeChild(downloadLink);
 
-  // Open installation page after download starts
-  window.location.href = 'install.html';
+  // Delay opening install.html by 500ms
+  setTimeout(() => {
+    window.location.href = 'install.html';
+  }, 500); // 0.5 seconds delay
 });
 </script>
-
-
 
 </body>
 
 </html>
+
 
 
 
