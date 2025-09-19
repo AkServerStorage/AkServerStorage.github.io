@@ -85,55 +85,55 @@
 </head>
 
 <body>
- <!-- Navbar -->
-<header class="navbar">
-  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
-  <div class="logo">
-    <a href="./">
-      <img src="images/akserver-logo.png" alt="AkServer Logo" style="height: 32px;" loading="lazy">
-    </a>
-    <div class="bot-container">
-      <img src="images/akserver-ai-bot.png" alt="AkServer Private AI Bot" class="bot-image" loading="lazy">
-      <span class="cloud-text">Coming soon: AI Without the Cloud</span>
+  <!-- Navbar -->
+  <header class="navbar">
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="logo">
+      <a href="./">
+        <img src="images/akserver-logo.png" alt="AkServer Logo" style="height: 32px;" loading="lazy">
+      </a>
+      <div class="bot-container">
+        <img src="images/akserver-ai-bot.png" alt="AkServer Private AI Bot" class="bot-image" loading="lazy">
+        <span class="cloud-text">Coming soon: AI Without the Cloud</span>
+      </div>
     </div>
-  </div>
-  <nav class="nav-links">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="install.html">Installation</a></li>
-      <li><a href="vision.html">Vision</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="navbar-social">
-      <a href="https://www.instagram.com/akserverstorage/" target="_blank" aria-label="Instagram AkServer" rel="noopener">
-        <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" loading="lazy" />
-      </a>
-      <a href="https://x.com/akserverstorage" target="_blank" aria-label="Twitter AkServer" rel="noopener">
-        <img src="icons/x-logo.png" alt="Twitter" loading="lazy" />
-      </a>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="install.html">Installation</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="navbar-social">
+        <a href="https://www.instagram.com/akserverstorage/" target="_blank" aria-label="Instagram AkServer" rel="noopener">
+          <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://x.com/akserverstorage" target="_blank" aria-label="Twitter AkServer" rel="noopener">
+          <img src="icons/x-logo.png" alt="Twitter" loading="lazy" />
+        </a>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="install.html">Installation</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="navbar-social mobile-social">
+        <a href="https://www.instagram.com/akserverstorage/" target="_blank" aria-label="Instagram AkServer" rel="noopener">
+          <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://x.com/akserverstorage" target="_blank" aria-label="Twitter AkServer" rel="noopener">
+          <img src="icons/x-logo.png" alt="Twitter" loading="lazy" />
+        </a>
+      </div>
     </div>
-  </nav>
-  <div class="mobile-menu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="install.html">Installation</a></li>
-      <li><a href="vision.html">Vision</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="navbar-social mobile-social">
-      <a href="https://www.instagram.com/akserverstorage/" target="_blank" aria-label="Instagram AkServer" rel="noopener">
-        <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" loading="lazy" />
-      </a>
-      <a href="https://x.com/akserverstorage" target="_blank" aria-label="Twitter AkServer" rel="noopener">
-        <img src="icons/x-logo.png" alt="Twitter" loading="lazy" />
-      </a>
-    </div>
-  </div>
-</header>
+  </header>
 
   <!-- Hero Section -->
   <section id="home" class="section hero">
@@ -150,12 +150,9 @@
       </p>
       <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
         <a href="#contact" class="btn-primary">Get Your Custom Solution</a>
-<a id="download-btn" href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe" class="btn-primary secondary">
-    Download for Windows
-</a>
-
-
-
+        <a id="download-btn" href="https://github.com/AkServerStorage/AkServerStorage.github.io/releases/download/AkServer/AkServer.exe" class="btn-primary secondary">
+          Download for Windows
+        </a>
 
       </div>
       <div class="flow-diagram" data-aos="fade-up" data-aos-delay="800">
@@ -427,72 +424,69 @@
   </section>
 
   <!-- Contact Section -->
-<section id="contact" class="section contact">
-  <div class="content">
-    <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
-    <p class="subtitle" data-aos="fade-up" data-aos-delay="200">
-      Interested in a custom solution? Let's talk.
-    </p>
-    <form id="contact-form" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Enquiry</button>
-    </form>
-  </div>
-</section>
+  <section id="contact" class="section contact">
+    <div class="content">
+      <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+      <p class="subtitle" data-aos="fade-up" data-aos-delay="200">
+        Interested in a custom solution? Let's talk.
+      </p>
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
 
-<script>
-const form = document.getElementById("contact-form");
-const messageDiv = document.getElementById("form-message");
-
-form.addEventListener("submit", e => {
-  e.preventDefault();
-
-  const url = "https://docs.google.com/forms/d/e/1FAIpQLSdqrbHHj9CCturgMsywAqC1kO55Nh-EYF7OI7ofh5P9Tb0R2w/formResponse";
-
-  const data = new FormData();
-  data.append("entry.46613729", form.name.value);     // Name field
-  data.append("entry.2050233821", form.email.value);  // Email field
-  data.append("entry.1605320062", form.message.value);// Message field
-
-  fetch(url, { method: "POST", mode: "no-cors", body: data })
-    .then(() => {
-      messageDiv.textContent = "✅ Enquiry sent successfully! We’ll get back to you soon.";
-      form.reset();
-    })
-    .catch(() => {
-      messageDiv.style.color = "red";
-      messageDiv.textContent = "❌ Failed to send enquiry. Please try again.";
+  <script>
+    const form = document.getElementById("contact-form");
+    const messageDiv = document.getElementById("form-message");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      const url = "https://docs.google.com/forms/d/e/1FAIpQLSdqrbHHj9CCturgMsywAqC1kO55Nh-EYF7OI7ofh5P9Tb0R2w/formResponse";
+      const data = new FormData();
+      data.append("entry.46613729", form.name.value); // Name field
+      data.append("entry.2050233821", form.email.value); // Email field
+      data.append("entry.1605320062", form.message.value); // Message field
+      fetch(url, {
+          method: "POST",
+          mode: "no-cors",
+          body: data
+        })
+        .then(() => {
+          messageDiv.textContent = "✅ Enquiry sent successfully! We’ll get back to you soon.";
+          form.reset();
+        })
+        .catch(() => {
+          messageDiv.style.color = "red";
+          messageDiv.textContent = "❌ Failed to send enquiry. Please try again.";
+        });
     });
-});
+  </script>
 
-</script>
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <nav aria-label="Social media links" style="display: inline-flex; gap: 12px; margin-bottom: 0.6rem; justify-content: center;">
+        <a href="https://www.instagram.com/akserverstorage/" target="_blank" rel="noopener" aria-label="Instagram AkServer">
+          <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" width="24" height="24" loading="lazy" />
+        </a>
+        <a href="https://x.com/akserverstorage" target="_blank" rel="noopener" aria-label="Twitter AkServer">
+          <img src="icons/x-logo.png" alt="Twitter" width="24" height="24" loading="lazy" />
+        </a>
+      </nav>
+      <p style="margin: 0; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; color: #000;">
+        &copy; 2025 AkServer. All rights reserved.
+        &nbsp;|&nbsp;
+        <a href="privacy.html" style="color: var(--brand-blue); text-decoration: none; font-weight: 500;" aria-label="View Licenses, Privacy Policy, and EULA">
+          Licenses & Privacy Policy <span style="color: #000;">|</span>
+        </a>
 
-
-
-<!-- Footer -->
-<footer class="footer" role="contentinfo">
-  <div class="footer-container">
-    <nav aria-label="Social media links" style="display: inline-flex; gap: 12px; margin-bottom: 0.6rem; justify-content: center;">
-      <a href="https://www.instagram.com/akserverstorage/" target="_blank" rel="noopener" aria-label="Instagram AkServer">
-        <img src="icons/Instagram_Glyph_Gradient.svg" alt="Instagram" width="24" height="24" loading="lazy" />
-      </a>
-      <a href="https://x.com/akserverstorage" target="_blank" rel="noopener" aria-label="Twitter AkServer">
-        <img src="icons/x-logo.png" alt="Twitter" width="24" height="24" loading="lazy" />
-      </a>
-    </nav>
-    <p style="margin: 0; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; color: #000;">
-      &copy; 2025 AkServer. All rights reserved.
-      &nbsp;|&nbsp;
-      <a href="privacy.html" style="color: var(--brand-blue); text-decoration: none; font-weight: 500;" aria-label="View Licenses, Privacy Policy, and EULA">
-        Licenses & Privacy Policy <span style="color: #000;">|</span>
-      </a>
-      
-      <span style="font-style: italic; color: #555;">Designed by AkshAy Shinde.</span>
-    </p>
-  </div>
-</footer>
+        <span style="font-style: italic; color: #555;">Designed by AkshAy Shinde.</span>
+      </p>
+    </div>
+  </footer>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
@@ -520,7 +514,6 @@ form.addEventListener("submit", e => {
         });
       }
     });
-
     // Carousel functionality
     const carouselTrack = document.querySelector('.carousel-track');
     const carouselDots = document.querySelectorAll('.carousel-dots .dot');
@@ -643,81 +636,59 @@ form.addEventListener("submit", e => {
       });
     }
   </script>
+
   <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.querySelector(".hamburger");
-  const menu = document.querySelector(".mobile-menu");
-
-  if (!hamburger || !menu) return;
-
-  const closeMenu = () => {
-    menu.classList.remove("active");
-    hamburger.setAttribute("aria-expanded", "false");
-  };
-
-  // Toggle menu on hamburger click
-  hamburger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const isOpen = menu.classList.toggle("active");
-    hamburger.setAttribute("aria-expanded", isOpen);
-  });
-
-  // Close menu when clicking/tapping outside
-  document.addEventListener("click", (e) => {
-    if (!menu.contains(e.target) && !hamburger.contains(e.target)) closeMenu();
-  });
-
-  document.addEventListener("touchstart", (e) => {
-    if (!menu.contains(e.target) && !hamburger.contains(e.target)) closeMenu();
-  });
-
-  // Close menu on mobile menu link click
-  menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-});
-
+    document.addEventListener("DOMContentLoaded", function() {
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".mobile-menu");
+      if (!hamburger || !menu) return;
+      const closeMenu = () => {
+        menu.classList.remove("active");
+        menu.style.height = "0"; // collapse
+        hamburger.setAttribute("aria-expanded", "false");
+      };
+      // Toggle menu on hamburger click
+      hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = menu.classList.toggle("active");
+        if (isOpen) {
+          menu.style.height = menu.scrollHeight + "px"; // expand full
+        } else {
+          menu.style.height = "0";
+        }
+        hamburger.setAttribute("aria-expanded", isOpen);
+      });
+      // Close menu when clicking/tapping outside
+      const outsideHandler = (e) => {
+        if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+          closeMenu();
+        }
+      };
+      document.addEventListener("click", outsideHandler);
+      document.addEventListener("touchstart", outsideHandler);
+      // Close menu on mobile menu link click
+      menu.querySelectorAll("a").forEach((link) =>
+        link.addEventListener("click", closeMenu)
+      );
+    });
   </script>
-<script>
-document.getElementById('download-btn').addEventListener('click', function(e) {
-    e.preventDefault(); // prevent default navigation
 
-    const downloadUrl = this.href;
-
-    // Create invisible iframe to start the download
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = downloadUrl;
-    document.body.appendChild(iframe);
-
-    // Navigate to install.html after a short delay to ensure download starts
-    setTimeout(() => {
+  <script>
+    document.getElementById('download-btn').addEventListener('click', function(e) {
+      e.preventDefault(); // prevent default navigation
+      const downloadUrl = this.href;
+      // Create invisible iframe to start the download
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = downloadUrl;
+      document.body.appendChild(iframe);
+      // Navigate to install.html after a short delay to ensure download starts
+      setTimeout(() => {
         window.location.href = 'install.html';
-    }, 300); // 300ms is usually enough
-});
-</script>
+      }, 300); // 300ms is usually enough
+    });
+  </script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
